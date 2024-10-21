@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100vw;
+    height: 80vh;
+    font-family: "Oswald", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero{
+    background: url(./img/bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.outro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.outro p {
+    color: #ded8cd;
+    font-size: 30px;
+    letter-spacing: -0.005em;   
+}
+
+.sticky {
+    position: relative;
+    background-color: #ded8cd;
+}
+
+.sticky-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+}
+
+.sticky-header h1 {
+    margin: 0;
+    color: #000;
+    font-size: 30vw;
+    font-weight: lighter;
+    letter-spacing: -0.05em;
+    line-height: 100%;
+}
+
+.card {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    width: 350px;
+    height: 500px;
+    background-color: #000;
+    border-radius: 1em;
+    padding: 0.5em;
+    will-change: transform;
+    z-index: 2;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.card-content {
+    width: 100%;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.card-content h2 {
+    font-size: 42px;
+    font-weight: lighter;
+    letter-spacing: -0.005em;
+}
+
+.card-content p {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: -0.005em;
+}
+
+/* lenis smooth scroll  */
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
